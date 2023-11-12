@@ -36,14 +36,11 @@ function AddItem() {
         <div>
             <Navbar />
 
-
             <div className = 'box'>
                 
                 <div className='image'>
                     <img src={data.imgURL}  width='100px' />
                 </div>
-
-      
 
                 <div className= 'productname'>
                     <p>Name</p>
@@ -78,6 +75,7 @@ function AddItem() {
                         setData({...d, price: event.target.value})
                     }} />
                 </div>
+
                 <div className= 'category'>
                     <p>Category</p>
                     <input 
@@ -91,7 +89,7 @@ function AddItem() {
                     }} />
                 </div>
 
-                <div className= 'category'>
+                <div className= 'imageurl'>
                     <p>ImageURL</p>
                     <input 
                     placeholder='type here'
@@ -108,6 +106,7 @@ function AddItem() {
                         <span>ADD ITEM</span>
                     </button>
                 </div>
+
             </div>
         </div>
     );
