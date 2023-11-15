@@ -47,26 +47,20 @@ function Products(props) {
                   className="minus"
                   onClick={() => {
                     dispatch(decrement(product));
-                  }}
-                >
-                  -
+                  }}>-
                 </button>
 
-                                <button className='plus' onClick={() => {
-
-                                    dispatch(increment(product));
-
-
-                                }}>+</button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                 ))}
+                <button className='plus' onClick={() => {
+                  dispatch(increment(product));
+                }}>+
+                </button>
+              </div>
             </div>
-        </div>
-    )
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
-
 
 export default Products;

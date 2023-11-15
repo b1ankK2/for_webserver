@@ -15,7 +15,7 @@ export default function Navbar() {
                 ></box-icon>
                 <h1>Sari-Sari Store</h1>
             </div>
-
+            
             <nav className="navbar">
                 <ul>
                     <li>
@@ -66,9 +66,7 @@ export default function Navbar() {
                         </NavLink>
                     </li>
                 </ul>
-
             </nav>
         </div>
     )
-
 }

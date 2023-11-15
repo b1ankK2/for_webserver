@@ -56,10 +56,7 @@ const productSlice = createSlice({
                 );
                 state.total = totalPrice;
                 state.quantity -= 1;
-        
-                    }
-
-
+            }
         },
         resetValues: (state) => {
             state.payment = []
@@ -76,13 +73,8 @@ const productSlice = createSlice({
         setTotalSales: (state, action) => {
             state.totalsales += action.payload
         }
-
-
     },
 });
 
-
 export const { increment, decrement, resetValues, setCustomerCash, setTotalSales} = productSlice.actions;
-
 export default productSlice.reducer;
-

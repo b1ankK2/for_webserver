@@ -11,9 +11,7 @@
     width: 100vw;
     height: 8vh;
     background-color: #35475F;
-
     display: flex;
-
 }
 
 /* for title and Logo */
@@ -21,11 +19,9 @@
 .title {
     width: 40vw;
     height: 8vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .title h1 {
@@ -58,11 +54,8 @@
     font-weight: 900;
     color: white;
     text-decoration: none;
-
-
     padding: 10px;
     letter-spacing: 1px;
-    
 }
 
 .navbar ul li a:hover{
