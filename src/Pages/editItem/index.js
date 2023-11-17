@@ -23,9 +23,7 @@ function EditItem() {
         imgUrl: ''
     })
 
-
     // searchbar and category function
-
     const filteredProducts = products.filter(
         (product) =>
         (!selectedCategory || product.category === selectedCategory) && // filter by category
@@ -40,12 +38,6 @@ function EditItem() {
         setSearchTerm(term);
     };
 
-
-
-
-
-
-
     const displayEdit = (img, name, price, code) =>{
         setShowDiv(true);
         setIsCentered(false);
@@ -53,26 +45,19 @@ function EditItem() {
         setName(name);
         setPrice(price);
         setCode(code);
-
     }
+
     const hideEdit = () =>{
         setShowDiv(false);
         setIsCentered(true);
     }
+
     function handleInput(event) {
         setContent(event.target.textContent);
     }
 
-
-
-
     const handleEditItem = () => {
-
         editProduct(code, data.price, data.name);
-    
-   
-
-
     }
 
     return(
@@ -87,34 +72,23 @@ function EditItem() {
                 <div className = "productsss">
                     <div className='rowww'>
                     {filteredProducts.map((value, index) => (
-                        
-                            <div className='columnnn' key={index}>
-                                
-                                <div className='carddd'>
-                                
-                                    <img src={value.img} style={{width: 100, height: 163}}  className="productimage" />            
-                    
+                            <div className='columnnn' key={index}>                                
+                                <div className='carddd'>                                
+                                    <img src={value.img} style={{width: 100, height: 163}}  className="productimage" />                                
                                     <div className='containercarddd'>
                                         <h4>{value.name}</h4>
                                         <p> ₱{value.price}</p>
                                         <button onClick={() => displayEdit(value.img, value.name, value.price, value.code)} className='edit'>Edit</button>
-                                        
                                     </div>
                                 </div>
                             </div>
-                            
                         ))}
-                         
                 </div>
-                
             </div>
             {showDiv && 
-                <div className="edititem">
-                    
-                            
+                <div className="edititem">     
                     <img src={image} style={{width: 150, height: 200}} />
                     <div className="editname">
-
                         <label className="namee">Name</label>
                         <input
                         className="nameinput"
@@ -126,18 +100,10 @@ function EditItem() {
                             setData({...d, name: event.target.value})
                         }} 
                         />
-
-                        {/* <p className="namee">Name</p>
-                        <p className= "nameevalue"contentEditable={true} onInput={handleInput} value={name}>
-                            {name}
-                            </p> */}
                     </div>
 
                     <div className="editprice">
-
-
                         <label className="pricee">Price</label>
-
                         <input
                         className="nameinput"
                         type="number"
@@ -148,31 +114,16 @@ function EditItem() {
                             setData({...d, price: event.target.value})
                         }} 
                         />
-
-
-
-                        {/* <p className="pricee">Price</p>
-                        <p className="priceevalue" contentEditable={true} onInput={handleInput} onChange={(event) => {
-                            setPrice(event.target.value)
-                        }}>
-                            ₱{price}
-                        </p> */}
-   
                     </div>    
-
 
                     <div className="editbutton">
                         <button className="confirmm" onClick={handleEditItem}>Confirm</button>
                         <button onClick={() => hideEdit()} className="cancell">Cancel</button>
-                    </div> 
-                        
+                    </div>   
                 </div>}         
             </div> 
-            
         </div>
-        
     );
 }
-
 
 export default EditItem;
