@@ -8,14 +8,11 @@
     width: 40vw;
     height: 10vh;
     position: fixed;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-
 
 .totalsales h2 {
     font-size: 30px;
@@ -27,12 +24,10 @@
 .totalsales h3 {
     color: #FFFFFF;
     font-size: 25px;
-
     padding: 10px 50px;
     margin-left: 30px;
     border-radius: 30px;
     letter-spacing: 2px;
-
     background-color: #52B050;
 }
 
@@ -43,18 +38,14 @@
     width: 30vw;
     height: 80vh;
     background-color: #ffffff;
-    
     border: 2px solid black;
     border-radius: 10px;
-
     padding: 10px 20px
 
 }
 
-
 .containertable {
     height: 62vh;
-
     background-color: #ffffff;
     border-bottom: 2px solid black;
     overflow-y: scroll;
@@ -68,21 +59,21 @@
 .tablecode {
     width: 6vw;
 }
+
 .tableqty {
     width: 6vw;
 }
+
 .tableprice {
     width: 6vw;
 }
 
 table tr { 
-    margin: 10px 0px;
-
+    margin: 10px 0px
 }
 
 table tr th{
     padding: 5px 0px;
-    
 }
 
 table tr td {
@@ -94,8 +85,6 @@ table tr td {
     
 }
 
-
-
 .tabletext {
     height: 5vh;
     display: flex;
@@ -103,7 +92,6 @@ table tr td {
     align-items: center;
 
 }
-
 
 .tablebuttons ul{
     height: 10vh;
@@ -128,7 +116,6 @@ table tr td {
     cursor: pointer;
 }
 
-
 .tablebuttons ul li button{
     border: 0px;
     padding: 10px;
@@ -146,16 +133,13 @@ table tr td {
 .modall{
     color: white;
     background-color: #779D27;
-
     width: 40vw;
     height: 50vh;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     border-radius: 10px;
-
 }
 
 .hrr {
@@ -171,50 +155,6 @@ table tr td {
     background-color: #474545;
     border: 0px;
 }
-
-
-
-/* .totalcash {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-
-}
-
-
-.totalcash h3{
-    width: 40%;
-    float: left;
-}
-
-.totalcash h3 {
-    color: #FFFFFF;
-    width: 40%;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px;
-    margin: 10px 0px;
-    text-align: right;
-
-
-}
-
-.totalcash p{
-
-    width: 50%;
-    font-size: 29px;
-    letter-spacing: 1px;
-    margin: 10px 100px;
-    padding: 10px 100px;
-    background-color: #B5BDBD;
-    border-radius: 50px;
-} */
-
-
-
-/* cash */
 
 .cash {
     width: 100%;
@@ -234,7 +174,6 @@ table tr td {
 .divinput {
     width: 50%;
 }
-
 
 .divinput input {
     width: 100%;
@@ -276,8 +215,6 @@ table tr td {
     color: black;
 }
 
-
-/* change */
 .change {
     width: 100%;
     height: 100px;
@@ -306,66 +243,12 @@ table tr td {
     color: black;
 }
 
-
-/* .cash h3 {
-    color: #FFFFFF;
-    width: 40%;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: right;
-}
-
-.cash input {
-    width: 60%;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-align: center;
-    border-radius: 50px;
-    background-color: #B5BDBD;
-    border: 0px;
-    color: #F1F1F1;
-    font-size: 29px;
-
-} */
-
 /* hide the up and down buttons */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-
-
-/* .change {
-    width: 100%;
-    display: flex;
-    text-align: center;
-
-    margin-top: 20px;
-}
-
-.change h3{
-    color: #FFFFFF;
-    width: 40%;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px;
-    margin: 10px 0px;
-    text-align: right;
-}
-
-.change p {
-    width: 50%;
-    font-size: 29px;
-    letter-spacing: 1px;
-    margin: 10px 100px;
-    padding: 10px 100px;
-    background-color: #B5BDBD;
-    border-radius: 50px;
-} */
 
 .confirm {
     width: 100%;
