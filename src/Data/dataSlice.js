@@ -11,8 +11,5 @@ const productAdd = createSlice({
     },
 });
 
-
 export const { } = productAdd.actions;
-
 export default productAdd.reducer;
-
