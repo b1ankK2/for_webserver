@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .totalsales h2 {
@@ -82,7 +81,6 @@ table tr td {
     text-align: center;
     background-color: #ffffff;
     letter-spacing: 2px;
-    
 }
 
 .tabletext {
@@ -90,7 +88,6 @@ table tr td {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .tablebuttons ul{
