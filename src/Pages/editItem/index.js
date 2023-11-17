@@ -96,7 +96,6 @@ function EditItem() {
                         value={data.name}
                         onChange={(event) => {
                             let d = data;
-
                             setData({...d, name: event.target.value})
                         }} 
                         />
