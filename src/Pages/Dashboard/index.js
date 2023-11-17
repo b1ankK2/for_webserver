@@ -17,14 +17,11 @@ function Dashboard() {
         dispatch(resetValues());
     }
 
-
     const payment = useSelector((state) => state.product.payment);
     const totals = useSelector((state) => state.product.total);
     const totalSale = useSelector((state) => state.product.totalsales);
     const change = useSelector((state) => state.product.customerChange);
     const cash = useSelector((state) => state.product.customerCash);
-
-
 
     // modal for payment
     const [modal, setModal] = useState(false);
@@ -38,22 +35,15 @@ function Dashboard() {
         dispatch(resetValues());
     }
 
-
-
     return(
         <div>
             <Navbar />
-
             <div className="totalsales">
                 <h2>Total Sales</h2>
                 <h3>₱ {totalSale.toFixed(2)}</h3>
-
             </div>
-
             <div className="table"> 
-
                 <div className="containertable">
-
                     <table>
                         <tr>
                             <th className="tablename">Name</th>
@@ -70,13 +60,8 @@ function Dashboard() {
                             <td>{value.qty}</td>
                             <td>{value.price}</td>
                         </tr>
-
                         ))}
-
-
                     </table>
-
-
                 </div>
 
                 <div className="tabletext">
@@ -84,41 +69,40 @@ function Dashboard() {
                     <h2>₱ {totals.toFixed(2)} </h2>
                 </div>
 
-
                 <div className="tablebuttons">
                     <ul>
                         <li>
-
-                        <button 
-                        onClick={handleDiscard} 
-                        style={{background:'#923333'}}
-                        ><box-icon 
-                        type='solid' 
-                        name='trash' 
-                        size='md' 
-                        color='lightblue' 
-                        animation='tada-hover'
-                        ></box-icon>Discard</button>
+                            <button 
+                                onClick={handleDiscard} 
+                                style={{background:'#923333'}}
+                            >
+                                <box-icon 
+                                    type='solid' 
+                                    name='trash' 
+                                    size='md' 
+                                    color='lightblue' 
+                                    animation='tada-hover'
+                                >
+                                </box-icon>Discard
+                            </button>
                         </li>
-                        <li>
 
-                        <button 
-                        onClick={handleModalOpen} 
-                        style={{background:'#8AAF5A'}}
-                        ><box-icon 
-                        name='money' 
-                        size='md' 
-                        color="green" 
-                        animation='tada-hover'
-                        ></box-icon>Payment</button>
+                        <li>
+                            <button 
+                                onClick={handleModalOpen} 
+                                style={{background:'#8AAF5A'}}
+                            >
+                                <box-icon 
+                                    name='money' 
+                                    size='md' 
+                                    color="green" 
+                                    animation='tada-hover'
+                                >
+                                </box-icon>Payment
+                            </button>
                         </li>                        
                     </ul>
-
-
                 </div>
-
-
-
             </div>
 
             <Products details={ProductData} />
@@ -141,7 +125,6 @@ function Dashboard() {
                         <p>₱ {totals.toFixed(2)}</p>
                     </div>
                 </div>
-
 
                 <div className='hrr'>
                     <hr />
@@ -167,11 +150,7 @@ function Dashboard() {
                         setModal(false);
                     }}>Confirm</button>
                 </div>
-
-
             </Modal>
-
-
         </div>
     );
 }
